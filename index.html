@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+        body {
+          background-image: url('images/binge15.gif');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+          font-family: "Open Sans",  Impact;
+        }
+        img {
+            display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+        }
+        .column {
+  float: left;
+  width: 33.33%;
+  padding: 125px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.container {
+  position: relative;
+  
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #7de5e9;
+  color: white;
+  font-size: 20px;
+  padding: 16px 32px;
+}
+        .shadow {
+        color: #fff;
+        font-size: 12em;
+        font-weight: bold;
+        font-family: Helvetica;
+        text-shadow: 
+    0 1px 0 #ccc, 
+    0 2px 0 #c9c9c9, 
+    0 3px 0 #bbb, 
+    0 4px 0 #b9b9b9, 
+    0 5px 0 #aaa, 
+    0 6px 1px rgba(0,0,0,.1), 
+    0 0 5px rgba(0,0,0,.1), 
+    0 1px 3px rgba(0,0,0,.3), 
+    0 3px 5px rgba(0,0,0,.2), 
+    0 5px 10px rgba(0,0,0,.25), 
+    0 10px 10px rgba(0,0,0,.2), 
+    0 20px 20px rgba(0,0,0,.15);
+    }
+
+    .shadow {
+        text-align: center;
+    }
+    .area {
+  text-align: center;
+  font-size: 6.5em;
+  color: #fff;
+  letter-spacing: -7px;
+  font-weight: 500;
+  text-transform: uppercase;
+  animation: blur 3.75s ease-out infinite;
+  text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+}
+
+@keyframes blur {
+  from {
+    text-shadow:0px 0px 10px #fff,
+      0px 0px 10px #fff, 
+      0px 0px 25px #fff,
+      0px 10px 100px #7B96B8,
+      0px -10px 100px #7B96B8,
+      0px -10px 100px #7B96B8;
+  }
+}
+.waviy {
+  position: relative;
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  margin-left: 45%;
+  color: white;
+
+}
+.fa-instagram {
+  background: #125688;
+  margin-right: 20%;
+  color: white;
+}
+    </style> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<!-- This is just a basic code,
+    You are allowed to -
+    1. change any image .
+    2. add extra content if you want 
+    etc. except changing the basic content of the page , you can add,replace or shift any content.
+    But, your are not allowed to increase the number of pages.
+
+-->
+<body>
+    <center>
+        <h1 class = "area">Binge watch</h1>
+        <div class="waviy">
+            <span style="--i:1">I</span>
+            <span style="--i:2">n</span>
+            <span style="--i:3">t</span>
+            <span style="--i:4">r</span>
+            <span style="--i:5">o</span>
+            <span style="--i:6">d</span>
+            <span style="--i:7">u</span>
+            <span style="--i:8">c</span>
+            <span style="--i:1">t</span>
+            <span style="--i:2">i</span>
+            <span style="--i:3">o</span>
+            <span style="--i:4">n</span>
+           </div>
+        <p style="color : rgb(217, 224, 22); font-size: 30px;">Just Choose N Watch top movies based on your Mood</p>
+    </center>
+    <br><br><br><br><br>
+        <div class = "row">
+            <div class = "column">
+            <a href="Horror\horror.html" target="_blank">
+                <div class = "container">
+                <img width="500px" height="500px" class="card-img-top image" src="https://img.freepik.com/premium-photo/3d-illustration-halloween-concept-background-castle-graveyard-horror-background_685067-358.jpg?w=2000" alt="">
+                <div class="middle">
+                  <div class="text">Horror</div>
+                </div>
+              </div>
+            </a>
+            </div>
+
+        <div class = "column">
+            <a href="Romantic-comedy/romcom1.html" target="_blank">
+              <div class = "container">
+                <img width="500px" height="500px" class="card-img-top image" src="https://media.istockphoto.com/id/875970634/vector/romantic-film-glyphs-vector-icon.jpg?s=612x612&w=0&k=20&c=s5BrM29Vxgtc9FI3yxT56XCSsSzYq1U18uxTjnkZnc0=" alt="">
+                <div class="middle">
+                  <div class="text">Romantic-Comedy</div>
+                </div>
+              </div>
+              </a>
+        </div>
+        </div>
+        <div class = "row">
+        <div class = "column">
+            <a href="Thrilling-Mysteries/design.html" target="_blank">
+              <div class = "container">
+                <img width="500px" height="500px" class="card-img-top image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgN3BwZUKUNBKKDbIeSwvZr5aFHNetxLhLMHdpG5qqlnZ24xtGk2C9YLpWXXZHaZT-D9M&usqp=CAU" alt="">
+                <div class="middle">
+                  <div class="text">Mystery</div>
+                </div>
+              </div>
+              </a>
+        </div>
+        <div class = "column">
+            <a href="Animation/animated.html" target="_blank">
+              <div class = "container">
+                <img width="500px" height="500px" class="card-img-top image" src="https://cloudfront-us-east-1.images.arcpublishing.com/culturacolectiva/5G6WCFYU7NACZBZ3AHZ7ICQQFU.jpg" alt="">
+                <div class="middle">
+                  <div class="text">Anime</div>
+                </div>
+              </div>
+              </a>
+        </div>
+        </div>
+        <div class = "row">
+            <div class = "column">
+            <a href="Action/action_movies.html" target="_blank">
+              <div class = "container">
+                <img width="500px" height="500px" class="card-img-top image" src="https://cdn.thecoolist.com/wp-content/uploads/2016/08/Blackhawk-Down-best-action-movie-960x540.jpg" alt="">
+                <div class="middle">
+                  <div class="text">Action</div>
+                </div>
+              </div>
+              </a>
+            </div>
+            <div class = "column">
+              <a href = "About.html" target="_blank">
+                <div class = "container">
+                  <img width = "500px" height = "500px" class = "card-img-top image" src = "https://icon-library.com/images/blue-heart-icon-on-android/blue-heart-icon-on-android-2.jpg" alt="about">
+                  <div class = "middle">
+                    <div class = "text">About us</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+        </div>
+    </div>  
+    <hr>
+    <hr>
+    <br>
+    <footer id="colophon" class="site-footer" role="contentinfo">
+        <a href="https://www.facebook.com/petrichor.iitpkd" target="_blank" class="fa fa-facebook"></a>
+        <a href="https://instagram.com/petrichor.iitpkd?igshid=MDM4ZDc5MmU=" target="_blank" class="fa fa-instagram"></a>
+        
+    </footer>
+    <br> 
+    <hr> <hr>
+    <!-- #colophon -->
+</body>
+</html>
