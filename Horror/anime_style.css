@@ -105,8 +105,8 @@
       margin-top: 12vw;
       margin-left: 25vw;
       /* transform:rotateX(7deg) rotateZ(-4deg) rotateY(13deg) scale3d(1, 1, -0.9); */
-      -webkit-transform: rotateX(23deg) rotateZ(-9deg) rotateY(15deg) scale3d(1, 1, -0.9);
-              transform: rotateX(23deg) rotateZ(-9deg) rotateY(15deg) scale3d(1, 1, -0.9);
+      -webkit-transform: rotateX(20deg) rotateZ(7deg) rotateY(7deg) scale3d(1, 1, -0.9);
+              transform: rotateX(20deg) rotateZ(7deg) rotateY(7deg) scale3d(1, 1, -0.9);
   }
   
   .box {
