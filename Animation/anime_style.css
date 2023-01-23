@@ -1,13 +1,12 @@
 .wrapper {
-    display: flex;
     justify-content: center;
     align-items: center;
     
   }
   
   .media {
-    width: 600px;
-    height: 600px;
+    width: 400px;
+    height: 400px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -17,11 +16,10 @@
   .layer {
     opacity: 0;
     position: absolute;
-    display: flex;
     justify-content: center;
     align-items: center;
     width: 10px;
-    height: 90%;
+    height: 50%;
     background: #FFF;
     color: #151E3F;
     transition: all 0.9s ease;
@@ -29,7 +27,8 @@
   }
   .media:hover .layer {
     opacity: 0.8;
-    width: 90%;
+    width: 5
+    0%;
     transition: all 0.5s ease;
     
   }
@@ -37,30 +36,6 @@
     body {
       transform: scale(0.6);
     }
-  }
-  body,
-  ol,
-  ul,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  th,
-  td,
-  dl,
-  dd,
-  form,
-  fieldset,
-  legend,
-  input,
-  textarea,
-  i,
-  select {
-      margin: 0;
-      padding: 0;
   }
   
   img 
@@ -71,7 +46,7 @@
   body {
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex;
+      display: block;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
@@ -83,7 +58,7 @@
               perspective: 90rem;
       -webkit-perspective-origin: 34% 61%;
               perspective-origin: 34% 61%;
-      background-image: url("https://i.pinimg.com/originals/4d/f1/9c/4df19c52a2ba2e1685b3e081b78eab5b.gif");
+      background-image: url("thor-avengers.gif");
       background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -118,7 +93,6 @@
   .container {
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex;
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
@@ -126,9 +100,10 @@
           justify-content: space-around;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-      width: 80vw;
+      width: 50vw;
       height: 100vh;
-      margin-left: 6vw;
+      margin-top: 12vw;
+      margin-left: 25vw;
       /* transform:rotateX(7deg) rotateZ(-4deg) rotateY(13deg) scale3d(1, 1, -0.9); */
       -webkit-transform: rotateX(23deg) rotateZ(-9deg) rotateY(15deg) scale3d(1, 1, -0.9);
               transform: rotateX(23deg) rotateZ(-9deg) rotateY(15deg) scale3d(1, 1, -0.9);
@@ -137,7 +112,6 @@
   .box {
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex;
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
@@ -273,8 +247,6 @@
   .box-1 button div::before {
       content: 'Sensebot';
       position: relative;
-      top: -44px;
-      left: -4px;
       color: #00BF9C;
       font-size: 21px;
       font-weight: 300;
@@ -287,8 +259,6 @@
   .box-2 button div::before {
       content: 'OnePass';
       position: relative;
-      top: -44px;
-      left: -6px;
       color: rgb(154, 123, 255);
       font-size: 21px;
       font-weight: 300;
@@ -301,8 +271,6 @@
   .box-3 button div::before {
       content: 'DeepKnow';
       position: relative;
-      top: -44px;
-      left: 3px;
       color: #008BFF;
       font-size: 21px;
       font-weight: 300;
@@ -315,8 +283,6 @@
   .box-4 button div::before {
       content: 'Scanner';
       position: relative;
-      top: -44px;
-      left: -9px;
       color: #FF6500;
       font-size: 21px;
       font-weight: 300;
@@ -328,7 +294,64 @@
   
   .dr {
   position: absolute;
-    bottom: 16px; 
-    right: 16px;
     width:100px;
   }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-size: cover;
+    height: 100vh;
+    width: 1000vh;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+}
+
+.card{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    height: 350px;
+    width: 5000px;
+    margin-right: 3rem;
+}
+
+.card:hover .gradient{
+    opacity: 1;
+}
+
+.gradient{
+    position: absolute;
+    background-image: linear-gradient(0deg, #e90606, transparent);
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.info{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+
+.time{
+    position: absolute;
+    bottom: 0;
+    font-size: 30px;
+    padding: 2rem;
+}
+
+.title{
+    font-size: 2.2em;
+    font-weight: 700;
+}
